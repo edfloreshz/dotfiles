@@ -52,7 +52,7 @@ echo "Obtained dotfiles"
 
 # Waybar
 
-[ -d $WAYBAR ] && cp -r $WAYBAR/config $REPO_WAYBAR
+[ -d $WAYBAR ] && cp -r $WAYBAR/* $REPO_WAYBAR
 
 # Tmux
 

@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run --gtk-dark true
+set $menu rofi -show run
 
 ### Gaps
 #
@@ -28,7 +28,7 @@ smart_gaps off
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/Pictures/Wallpapers/plane.jpg fill
+output * bg $HOME/Pictures/Wallpapers/kk4fmcxegpb81.jpg fill
 #
 # Example configuration:
 #
