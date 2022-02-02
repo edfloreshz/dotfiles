@@ -8,7 +8,6 @@ ROFI=$CONFIG/rofi
 POLYBAR=$CONFIG/polybar
 LEFTWM=$CONFIG/leftwm 
 WAYBAR=$CONFIG/waybar
-TMUX=$HOME/.tmux.conf 
 SWAY=$CONFIG/sway
 AWESOME=$CONFIG/awesome
 
@@ -38,7 +37,7 @@ echo "Removed old .config"
 # Dotfiles 
 
 ## Get user dotfiles.
-cp $HOME/{.gitconfig,.zshrc,.alacritty.yml,.bashrc,.vimrc,.xprofile} .
+cp $HOME/{.gitconfig,.zshrc,.alacritty.yml,.bashrc,.vimrc,.xprofile,.tmux.conf} .
 echo "Obtained dotfiles"
 
 # Rofi
@@ -53,10 +52,6 @@ echo "Obtained dotfiles"
 # Waybar
 
 [ -d $WAYBAR ] && cp -r $WAYBAR/* $REPO_WAYBAR
-
-# Tmux
-
-[ -d $TMUX ] && cp $TMUX .
 
 # Sway
 

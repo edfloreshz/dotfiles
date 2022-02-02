@@ -34,7 +34,7 @@ cursor:
   style: Block
 
 shell:
-  program: /bin/zsh
+  program: /usr/bin/fish
 
 launcher:
   program: xdg-open

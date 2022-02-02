@@ -133,3 +133,5 @@ alias grc='git rebase --continue'
 alias dev='function goproj() { cd $HOME/Developer/$1/$2;};goproj'
 alias up='find ~/Developer -maxdepth 2 -mindepth 2 -type d -print > ~/.devpaths'
 alias edit='function open() { cd $(grep "$1" ~/.devpaths) && vim };open'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
