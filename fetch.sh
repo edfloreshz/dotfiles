@@ -10,6 +10,7 @@ LEFTWM=$CONFIG/leftwm
 WAYBAR=$CONFIG/waybar
 SWAY=$CONFIG/sway
 AWESOME=$CONFIG/awesome
+FISH=$CONFIG/fish
 
 # Repository directories
 REPO=$(pwd)
@@ -20,6 +21,7 @@ REPO_LEFTWM=$REPO_CONFIG/leftwm
 REPO_WAYBAR=$REPO_CONFIG/waybar
 REPO_SWAY=$REPO_CONFIG/sway
 REPO_AWESOME=$REPO_CONFIG/awesome
+REPO_FISH=$REPO_CONFIG/fish
 
 # Delete old folders
 rm -rf $REPO_CONFIG
@@ -33,6 +35,7 @@ echo "Removed old .config"
 [ ! -d $REPO_WAYBAR     ] && mkdir $REPO_WAYBAR
 [ ! -d $REPO_SWAY       ] && mkdir $REPO_SWAY
 [ ! -d $REPO_AWESOME    ] && mkdir $REPO_AWESOME
+[ ! -d $REPO_FISH       ] && mkdir $REPO_FISH
 
 # Dotfiles 
 
@@ -60,3 +63,7 @@ echo "Obtained dotfiles"
 # Awesome WM
 
 [ -d $AWESOME ] && cp -r $AWESOME/* $REPO_AWESOME
+
+# Fish
+
+[ -d $FISH ] && cp -r $FISH/* $REPO_FISH
