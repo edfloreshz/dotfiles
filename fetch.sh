@@ -23,10 +23,6 @@ REPO_SWAY=$REPO_CONFIG/sway
 REPO_AWESOME=$REPO_CONFIG/awesome
 REPO_FISH=$REPO_CONFIG/fish
 
-# Delete old folders
-rm -rf $REPO_CONFIG
-echo "Removed old .config"
-
 # Ensure folders are present
 [ ! -d $REPO_CONFIG     ] && mkdir $REPO_CONFIG
 [ ! -d $REPO_ROFI       ] && mkdir $REPO_ROFI
