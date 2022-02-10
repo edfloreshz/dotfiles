@@ -40,6 +40,7 @@ OPTIONS=(
     10 "Sway"
     11 "Awesome"
     12 "Git"
+    13 "Fish"
 )
 
 while CHOICE=$(dialog --clear --backtitle "$BACKTITLE" --title "$TITLE" \
@@ -108,6 +109,12 @@ do
             cp .gitconfig $HOME
             echo "Git config file placed in $HOME/.gitconfig"
             ;;
+        
+        13)
+	    echo "Placing fish configuration files"
+	    cp -r .config/fish $CONFIG
+	    echo "Fish config placed in $CONFIG/fish"
+	    ;;
         *)
             break
             ;;
