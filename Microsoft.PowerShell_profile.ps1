@@ -10,8 +10,19 @@ oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/
 
 # Alias
 Set-Alias -Name c -Value cls
-Set-Alias -Name cr -Value cargo
 Set-Alias -Name c -Value clear
+# PowerShell
+Function Reload { . $PROFILE }
+Set-Alias -Name r -Value Reload
+# Cargo
+Set-Alias -Name cg -Value cargo
+Function CargoRun { cargo run }
+Set-Alias -Name cr -Value CargoRun
+Function CargoBuild { cargo build }
+Set-Alias -Name cb -Value CargoBuild
+Function CargoCheck { cargo check }
+Set-Alias -Name ch -Value CargoCheck
+# Git
 Set-Alias -Name g -Value git
 Function GitStatus { git status }
 Set-Alias gs GitStatus -Scope Global
