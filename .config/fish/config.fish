@@ -21,12 +21,6 @@ abbr -a vim nvim
 
 set -U fish_user_paths /home/eduardo/.cargo/bin $fish_user_paths 
 
-if status is-interactive
-    if ! set -q TMUX
-        exec tmux
-    end
-end
-
 if command -v paru > /dev/null
     abbr -a i paru -S
     abbr -a r paru -R
